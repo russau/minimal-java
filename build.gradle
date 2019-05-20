@@ -1,0 +1,19 @@
+plugins {
+  id 'java'
+  id 'application'
+}
+
+mainClassName = 'clients.BasicProducer'
+
+repositories {
+    mavenCentral()
+    maven { url "http://packages.confluent.io/maven/" }
+}
+
+jar {
+    baseName = 'basic-producer'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
